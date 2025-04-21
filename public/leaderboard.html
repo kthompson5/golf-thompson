@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard – Golf Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="leaderboard.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1f3a;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #002f5f;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #002f5f;
+      color: white;
+      font-weight: 600;
+    }
+
+    td.total-score {
+      font-weight: bold;
+      background-color: #e6f0ff;
+    }
+
+    .powered-logo {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .powered-logo span {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .powered-logo img {
+      max-width: 180px;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Leaderboard</h1>
+    <table id="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Round 1</th>
+          <th>Round 2</th>
+          <th>Round 3</th>
+          <th>Round 4</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be populated by JS -->
+      </tbody>
+    </table>
+
+    <div class="powered-logo">
+      <span>Powered by</span>
+      <img src="tsalogo.png" alt="Thompson Sports Analytics" />
+    </div>
+  </div>
+</body>
+</html>
