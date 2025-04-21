@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const container = document.getElementById("detailed-leaderboard");
 
   try {
-    const res = await fetch("https://your-backend-url.onrender.com/teams");
+    const res = await fetch("https://golf-thompson.onrender.com/teams");
     const teams = await res.json();
 
     teams.forEach((team) => {
