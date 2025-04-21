@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make Your Picks – Golf Game</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="picks.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1f3a;
+      color: #222;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #002f5f;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #002f5f;
+    }
+
+    select, input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #002f5f;
+      color: white;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #001a3a;
+    }
+
+    .powered-logo {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .powered-logo span {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .powered-logo img {
+      max-width: 180px;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Make Your Picks</h1>
+    <form id="picks-form">
+      <label for="playerName">Name:</label>
+      <input type="text" id="playerName" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+
+      <div id="golfer-selects"></div>
+
+      <label for="tiebreaker">Tiebreaker: What will the winning final score be? (Higher = better)</label>
+      <input type="text" id="tiebreaker" required />
+
+      <button type="submit">Submit Picks</button>
+      <a href="/leaderboard.html" class="nav-btn" style="display:inline-block;margin-left:15px;">View Leaderboard</a>
+    </form>
+
+    <div class="powered-logo">
+      <span>Powered by</span>
+      <img src="tsalogo.png" alt="Thompson Sports Analytics" />
+    </div>
+  </div>
+</body>
+</html>
