@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   ];
 
   try {
-    const res = await fetch("https://golf-thompson.onrender.com/teams");
+    const res = await fetch("https://golf-thompson-1.onrender.com/teams");
     const teams = await res.json();
 
     const pickedGolfers = new Set();
