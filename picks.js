@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("https://golf-thompson.onrender.com/submit-team", {
+      const response = await fetch("https://golf-thompson-1.onrender.com/submit-team", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
