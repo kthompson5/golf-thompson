@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thompson Family Golf Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="golf.js"></script>
+</head>
+<body>
+  <header class="header-bar">
+    <div class="logo-wrap">
+      <img src="/assets/tsalogo.png" alt="Thompson Pick 'Em Logo" class="logo" />
+      <h1 class="tagline">Thompson Family Golf Game</h1>
+    </div>
+    <a href="index.html" class="nav-button">Back to Home</a>
+  </header>
+
+  <main class="container">
+    <section class="rules">
+      <h2>Game Rules</h2>
+      <p>
+        Pick 7 golfers before the tournament begins. Each day, your golfers earn points based on how many strokes they beat (or lose to) their playing partners by.
+        After the cut on Friday, your team is trimmed to 5 golfers. Saturday scores are worth 1.5x, and Sunday scores are doubled.
+        If any of your golfers are paired together, only the better score counts for that day.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <h2>Enter Your Team</h2>
+      <form id="golf-form">
+        <label for="playerName">Your Name:</label>
+        <input type="text" id="playerName" required />
+
+        <div id="golferInputs">
+          <label>Golfer 1: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 2: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 3: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 4: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 5: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 6: <input type="text" name="golfer" required></label><br>
+          <label>Golfer 7: <input type="text" name="golfer" required></label><br>
+        </div>
+
+        <label for="tiebreaker">Tiebreaker: Winning Score on Sunday</label>
+        <input type="text" id="tiebreaker" required />
+
+        <button type="submit">Submit Picks</button>
+      </form>
+
+      <div id="confirmation" style="display: none; margin-top: 1rem;"></div>
+    </section>
+  </main>
+</body>
+</html>
