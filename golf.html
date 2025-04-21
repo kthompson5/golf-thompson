@@ -4,52 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thompson Family Golf Game</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script defer src="golf.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1f3a;
+      color: #222;
+    }
+
+    .home-container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .home-container h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #002f5f;
+      letter-spacing: -0.5px;
+    }
+
+    .home-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 35px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 25px;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #002f5f;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+      min-width: 180px;
+      text-align: center;
+    }
+
+    .nav-btn:hover {
+      background-color: #001a3a;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .powered-logo {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .powered-logo span {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .powered-logo img {
+      max-width: 180px;
+      margin-top: 2px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header-bar">
-    <div class="logo-wrap">
-      <img src="/assets/tsalogo.png" alt="Thompson Pick 'Em Logo" class="logo" />
-      <h1 class="tagline">Thompson Family Golf Game</h1>
+  <header class="header-bar stacked-header">
+    <div class="logo-row">
+      <img src="logo.png" alt="Thompson Family Pick 'Em" class="main-logo" />
+      <div class="tagline-area">
+        <div class="tagline">Final Round Golf Game</div>
+        <div class="league-logos">
+          <img src="pga.png" alt="PGA" />
+        </div>
+      </div>
     </div>
-    <a href="index.html" class="nav-button">Back to Home</a>
+    <nav class="nav-buttons">
+      <a href="/golf.html">Golf Home</a>
+      <a href="/picks.html">Make Picks</a>
+      <a href="/leaderboard.html">Leaderboard</a>
+      <a href="/rules.html">Rules</a>
+      <a href="/game-info.html">Detailed Info</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="rules">
-      <h2>Game Rules</h2>
-      <p>
-        Pick 7 golfers before the tournament begins. Each day, your golfers earn points based on how many strokes they beat (or lose to) their playing partners by.
-        After the cut on Friday, your team is trimmed to 5 golfers. Saturday scores are worth 1.5x, and Sunday scores are doubled.
-        If any of your golfers are paired together, only the better score counts for that day.
-      </p>
-    </section>
+  <div class="home-container">
+    <h1>Thompson Family Final Round Golf Game</h1>
 
-    <section class="form-section">
-      <h2>Enter Your Team</h2>
-      <form id="golf-form">
-        <label for="playerName">Your Name:</label>
-        <input type="text" id="playerName" required />
+    <div style="display: flex; justify-content: center; margin-bottom: 25px;">
+      <img src="pga.png" alt="PGA" style="height: 80px;" />
+    </div>
 
-        <div id="golferInputs">
-          <label>Golfer 1: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 2: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 3: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 4: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 5: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 6: <input type="text" name="golfer" required></label><br>
-          <label>Golfer 7: <input type="text" name="golfer" required></label><br>
-        </div>
+    <p>
+      Welcome to the official golf spin-off of the Thompson Family Pick 'Em. Build your 7-golfer roster, beat their partners stroke by stroke, and compete over four rounds of tournament action. Saturday and Sunday scoring is boosted — and only your best survive the cut.
+    </p>
 
-        <label for="tiebreaker">Tiebreaker: Winning Score on Sunday</label>
-        <input type="text" id="tiebreaker" required />
+    <p style="color: #002f5f; font-weight: 600; font-size: 1.15rem;">
+      Make your picks. Survive the cut. Rule the course.
+    </p>
 
-        <button type="submit">Submit Picks</button>
-      </form>
+    <div class="btn-group">
+      <a href="/picks.html" class="nav-btn">Make Picks</a>
+      <a href="/leaderboard.html" class="nav-btn">View Leaderboard</a>
+      <a href="/game-info.html" class="nav-btn">View Detailed Info</a>
+    </div>
 
-      <div id="confirmation" style="display: none; margin-top: 1rem;"></div>
-    </section>
-  </main>
+    <div class="powered-logo">
+      <span>Powered by</span>
+      <img src="tsalogo.png" alt="Thompson Sports Analytics" />
+    </div>
+  </div>
 </body>
 </html>
