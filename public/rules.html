@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rules – Golf Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1f3a;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #002f5f;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      line-height: 1.8;
+      font-size: 1rem;
+      padding-left: 20px;
+    }
+
+    .powered-logo {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .powered-logo span {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .powered-logo img {
+      max-width: 180px;
+      margin-top: 2px;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #002f5f;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #001a3a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Game Rules</h1>
+    <ul>
+      <li>Pick 7 golfers before the tournament begins. Rank matters for the weekend cut.</li>
+      <li>Each day, your golfers earn points based on how many strokes they beat (or lose to) their playing partners by.</li>
+      <li>If two of your golfers are paired together, only the better score is counted that day.</li>
+      <li>After the cut on Friday, your team is trimmed to your top 5 (you may manually choose or the top 5 remaining scores will be used).</li>
+      <li>Saturday scores are worth 1.5x points. Sunday scores are worth 2x points.</li>
+      <li>Your tiebreaker is the winning final score (highest is best in this game).</li>
+      <li>If there's still a tie, a coin flip will determine the winner.</li>
+    </ul>
+
+    <div class="btn-group">
+      <a href="/picks.html" class="nav-btn">Back to Picks</a>
+    </div>
+
+    <div class="powered-logo">
+      <span>Powered by</span>
+      <img src="tsalogo.png" alt="Thompson Sports Analytics" />
+    </div>
+  </div>
+</body>
+</html>
