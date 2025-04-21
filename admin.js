@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const scoreFields = document.getElementById("golfer-score-fields");
 
   try {
-    const res = await fetch("https://golf-thompson.onrender.com/teams");
+    const res = await fetch("https://golf-thompson-1.onrender.com/teams");
     const teams = await res.json();
 
     const allGolfers = new Set();
