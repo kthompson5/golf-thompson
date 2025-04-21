@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tableBody = document.querySelector("#leaderboard-table tbody");
 
   try {
-    const res = await fetch("https://golf-thompson.onrender.com/teams");
+    const res = await fetch("https://golf-thompson-1.onrender.com/teams");
     const teams = await res.json();
 
     // Temporary mock scoring values per round
